@@ -40,12 +40,14 @@
     </dependencies>
 
     <build>
+        <finalName>app</finalName>
         <plugins>
 
+            <!-- Compilador Java -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.5.1</version>
+                <version>3.11.0</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -62,6 +64,7 @@
                 </executions>
             </plugin>
 
+            <!-- Hace el JAR ejecutable -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
